@@ -200,57 +200,21 @@ export default function Footer() {
                   style={{ background: "hsl(346,60%,58%)" }}
                 />
                 <h3 className="font-serif text-base font-bold tracking-wide" style={{ color: "#fff" }}>
-                  Business Info
+                  Find Us Here
                 </h3>
               </div>
 
-              <div className="space-y-4">
-                {/* GST Card */}
-                <div
-                  className="rounded-2xl p-5"
-                  style={{ background: "rgba(255,255,255,0.04)" }}
-                >
-                  <p className="text-xs uppercase tracking-widest mb-1 font-semibold" style={{ color: "hsl(346,60%,60%)" }}>
-                    GST Number
-                  </p>
-                  <p className="font-mono text-base font-bold" style={{ color: "#fff" }}>
-                    XXXXXXXXXXXX
-                  </p>
-                </div>
-
-                {/* Est + Stores in a 2-col mini grid */}
-                <div className="grid grid-cols-2 gap-3">
-                  <div
-                    className="rounded-2xl p-4 text-center"
-                    style={{ background: "rgba(255,255,255,0.04)" }}
-                  >
-                    <p className="text-xs uppercase tracking-widest mb-1 font-semibold" style={{ color: "hsl(346,60%,60%)" }}>
-                      Est.
-                    </p>
-                    <p className="font-serif font-bold text-xl" style={{ color: "#fff" }}>2005</p>
-                  </div>
-                  <div
-                    className="rounded-2xl p-4 text-center"
-                    style={{ background: "rgba(255,255,255,0.04)" }}
-                  >
-                    <p className="text-xs uppercase tracking-widest mb-1 font-semibold" style={{ color: "hsl(346,60%,60%)" }}>
-                      Stores
-                    </p>
-                    <p className="font-serif font-bold text-xl" style={{ color: "#fff" }}>2</p>
-                  </div>
-                </div>
-
-                {/* Customers served pill */}
-                <div
-                  className="rounded-2xl p-4 flex items-center gap-3"
-                  style={{ background: "hsl(346 60% 58% / 0.1)" }}
-                >
-                  <Heart size={16} style={{ color: "hsl(346,60%,65%)", flexShrink: 0 }} />
-                  <div>
-                    <p className="text-xs font-medium" style={{ color: "hsl(346,65%,72%)" }}>Happy Customers</p>
-                    <p className="font-serif font-bold text-lg" style={{ color: "#fff" }}>1,00,000+</p>
-                  </div>
-                </div>
+              <div className="rounded-2xl overflow-hidden relative shadow-lg" style={{ height: "200px", background: "rgba(255,255,255,0.04)" }}>
+                <iframe
+                  title="Shreeparas Location"
+                  src="https://maps.google.com/maps?q=Shree+Paras+Compound,+Behind+M+G+Petrol+Pump,+Soygaon,+Malegaon-423105,+Maharashtra&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0, position: "absolute", top: 0, left: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </motion.div>
           </div>
