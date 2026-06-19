@@ -304,17 +304,15 @@ export default function Index() {
 
       {/* TWO VIDEOS SECTION */}
       <section 
-        className="py-16 sm:py-20 md:py-24 relative overflow-hidden"
-        style={{
-          background: "linear-gradient(135deg, hsl(var(--navy) / 0.98) 0%, hsl(220 30% 12% / 0.92) 100%)"
-        }}>
-        <div className="container mx-auto px-4">
+        className="py-16 sm:py-20 md:py-24 relative overflow-hidden section-cream"
+      >
+        <div className="container mx-auto px-4 relative z-10">
           <ScrollReveal className="text-center mb-12 sm:mb-16">
-            <p className="text-xs tracking-widest uppercase mb-3 font-medium" style={{ color: "hsl(var(--gold))" }}>Our Stories</p>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4" style={{ color: "hsl(var(--gold))" }}>
+            <p className="text-xs tracking-widest uppercase mb-3 font-medium text-primary">Our Stories</p>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-primary">
               Shreeparas in Motion
             </h2>
-            <div className="gold-divider" />
+            <div className="gold-divider" style={{ margin: "0 auto" }} />
           </ScrollReveal>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -341,9 +339,9 @@ export default function Index() {
                   Your browser does not support the video tag.
                 </video>
               </motion.div>
-              <div className="mt-4">
-                <h3 className="font-serif text-xl font-bold" style={{ color: "hsl(var(--gold))" }}>Shreeparas Supermarket</h3>
-                <p className="text-sm mt-2" style={{ color: "hsl(var(--gold-light) / 0.8)" }}>
+              <div className="mt-5">
+                <h3 className="font-serif text-2xl font-bold text-primary">Shreeparas Supermarket</h3>
+                <p className="text-sm mt-2 text-muted-foreground leading-relaxed">
                   Experience fresh groceries and quality products curated for your family.
                 </p>
               </div>
@@ -372,9 +370,9 @@ export default function Index() {
                   Your browser does not support the video tag.
                 </video>
               </motion.div>
-              <div className="mt-4">
-                <h3 className="font-serif text-xl font-bold" style={{ color: "hsl(var(--gold))" }}>Shree Paras Fashion World</h3>
-                <p className="text-sm mt-2" style={{ color: "hsl(var(--gold-light) / 0.8)" }}>
+              <div className="mt-5">
+                <h3 className="font-serif text-2xl font-bold text-primary">Shree Paras Fashion World</h3>
+                <p className="text-sm mt-2 text-muted-foreground leading-relaxed">
                   Discover timeless fashion and traditional styles for every occasion.
                 </p>
               </div>
@@ -384,19 +382,19 @@ export default function Index() {
       </section>
 
       {/* CTA BANNER */}
-      <section className="section-navy py-20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-10 left-10 w-64 h-64 rounded-full" style={{ background: "hsl(var(--gold))" }} />
-          <div className="absolute bottom-10 right-10 w-48 h-48 rounded-full" style={{ background: "hsl(var(--gold))" }} />
+      <section className="py-20 relative overflow-hidden" style={{ background: "linear-gradient(135deg, hsl(346 20% 97%) 0%, hsl(0 0% 100%) 100%)" }}>
+        <div className="absolute inset-0 opacity-[0.04]">
+          <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-primary blur-3xl" />
+          <div className="absolute bottom-10 right-10 w-48 h-48 rounded-full bg-primary blur-3xl" />
         </div>
         <div className="container mx-auto px-4 text-center relative z-10">
           <ScrollReveal>
-            <p className="text-xs tracking-widest uppercase mb-3 font-medium" style={{ color: "hsl(var(--gold))" }}>Come Visit Us</p>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4" style={{ color: "white" }}>
+            <p className="text-xs tracking-widest uppercase mb-3 font-medium text-primary">Come Visit Us</p>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4 text-primary">
               Experience Shreeparas Today
             </h2>
-            <div className="gold-divider" />
-            <p className="mt-6 mb-8 max-w-xl mx-auto" style={{ color: "rgba(255,255,255,0.7)" }}>
+            <div className="gold-divider" style={{ margin: "0 auto" }} />
+            <p className="mt-6 mb-8 max-w-xl mx-auto text-muted-foreground leading-relaxed">
               Step into a world of quality and style. We're open every day, ready to serve you and your family.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
