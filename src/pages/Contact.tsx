@@ -7,7 +7,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Our Location",
-    lines: ["Main Market Area, City Center,", "Your City – 000000, India"],
+    lines: ["Shree Paras Compound, Behind M G Petrol Pump", "Soygaon, Malegaon-423105, Maharashtra"],
   },
   {
     icon: Phone,
@@ -230,10 +230,10 @@ export default function Contact() {
                   <div className="text-center">
                     <MapPin size={48} className="mx-auto mb-4" style={{ color: "hsl(var(--gold))" }} />
                     <p className="font-serif text-xl font-bold mb-2" style={{ color: "white" }}>Find Us Here</p>
-                    <p className="text-sm mb-1" style={{ color: "hsl(var(--gold-light) / 0.7)" }}>Main Market Area, City Center</p>
-                    <p className="text-sm" style={{ color: "hsl(var(--gold-light) / 0.7)" }}>Your City – 000000, India</p>
+                    <p className="text-sm mb-1" style={{ color: "hsl(var(--gold-light) / 0.7)" }}>Shree Paras Compound, Behind M G Petrol Pump</p>
+                    <p className="text-sm" style={{ color: "hsl(var(--gold-light) / 0.7)" }}>Soygaon, Malegaon-423105, Maharashtra</p>
                     <a
-                      href="https://maps.google.com"
+                      href="https://www.google.com/maps/search/?api=1&query=Shree+Paras+Compound,+Behind+M+G+Petrol+Pump,+Soygaon,+Malegaon-423105,+Maharashtra"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-outline-gold inline-block mt-6 text-sm"

@@ -19,7 +19,7 @@ const socials = [
 ];
 
 const contactItems = [
-  { icon: MapPin, text: "Main Market Area, City Center, Your City – 000000" },
+  { icon: MapPin, text: "Shree Paras Compound, Behind M G Petrol Pump, Soygaon, Malegaon-423105, Maharashtra" },
   { icon: Phone, text: "+91 00000 00000", href: "tel:+910000000000" },
   { icon: Mail, text: "info@shreeparas.com", href: "mailto:info@shreeparas.com" },
   { icon: Clock, text: "Mon – Sun: 9:00 AM – 9:00 PM" },
