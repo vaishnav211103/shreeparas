@@ -219,28 +219,18 @@ export default function Contact() {
             {/* MAP + Extra Info */}
             <ScrollReveal direction="right">
               <div className="flex flex-col gap-6 h-full">
-                {/* Map embed placeholder */}
-                <div
-                  className="rounded-2xl overflow-hidden flex-1 flex items-center justify-center min-h-72"
-                  style={{
-                    background: "var(--gradient-navy)",
-                    minHeight: "320px",
-                  }}
-                >
-                  <div className="text-center">
-                    <MapPin size={48} className="mx-auto mb-4" style={{ color: "hsl(var(--gold))" }} />
-                    <p className="font-serif text-xl font-bold mb-2" style={{ color: "white" }}>Find Us Here</p>
-                    <p className="text-sm mb-1" style={{ color: "hsl(var(--gold-light) / 0.7)" }}>Shree Paras Compound, Behind M G Petrol Pump</p>
-                    <p className="text-sm" style={{ color: "hsl(var(--gold-light) / 0.7)" }}>Soygaon, Malegaon-423105, Maharashtra</p>
-                    <a
-                      href="https://www.google.com/maps/search/?api=1&query=Shree+Paras+Compound,+Behind+M+G+Petrol+Pump,+Soygaon,+Malegaon-423105,+Maharashtra"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-outline-gold inline-block mt-6 text-sm"
-                    >
-                      Open in Google Maps
-                    </a>
-                  </div>
+                {/* Interactive Map Embed */}
+                <div className="rounded-2xl overflow-hidden flex-1 relative min-h-72 shadow-lg" style={{ minHeight: "320px" }}>
+                  <iframe
+                    title="Shreeparas Location"
+                    src="https://maps.google.com/maps?q=Shree+Paras+Compound,+Behind+M+G+Petrol+Pump,+Soygaon,+Malegaon-423105,+Maharashtra&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0, position: "absolute", top: 0, left: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
 
                 {/* GST Info */}
